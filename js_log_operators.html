@@ -30,7 +30,21 @@
 
 	<script>
 		var x = document.getElementById("numA").value;
+		var y = document.getElementById("numB").value;
+		var btn1Click = document.getElementById("btn1");
+		var btn2Click = document.getElementById("btn2")
 		var output = document.getElementById("output");
+
+		btn1Click.onclick = getResult;
+		btn2Click.onclick = myFun;
+
+		function myFun() {
+			output.style.backgroundcolor = "yellow";
+		}
+
+		function getResult(){
+			output.innerHTML = main.getElementById("numA").value + main.getElementById("numB").value;
+		}
 
 		output.innerHTML = x + z;
 	</script>
