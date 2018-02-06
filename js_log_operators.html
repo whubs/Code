@@ -29,8 +29,8 @@
 	</div>
 
 	<script>
-		var x = parseInt(document.getElementById("numA").value);
-		var y = parseInt(document.getElementById("numB").value);
+	//parseInt() turns string into an integer
+		
 		var btn1Click = document.getElementById("btn1");
 		var btn2Click = document.getElementById("btn2")
 		var output = document.getElementById("output");
@@ -43,6 +43,8 @@
 		}
 
 		function getResult(){
+			var x = parseInt(document.getElementById("numA").value);
+			var y = parseInt(document.getElementById("numB").value);
 			output.innerHTML = x + y;
 		}
 
