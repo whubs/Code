@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Learning by Discoveryvip</title>
+	<style>
+		.btn{
+			padding: 5px;
+			border: 1px solid black;
+			display: inline-block;
+			margin: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="main">
+		A
+		<input type="number" name="numA" id="numA" value="6">
+		<br>B
+		<input type="number" name="numB" id="numB" value="33">
+	</div>
+	<div>
+		<div id="btn1" class="btn">Get Result</div>
+		<br>
+		<div id="btn2" class="btn">Do something when clicked</div>
+	</div>
+	<div> Output :
+		<div id="output">Nothing</div>
+	</div>
+
+	<script>
+		var x = "one";
+		var y = 5;
+		var z = "two";
+		var output = document.getElementById("output");
+
+		output.innerHTML = x + z;
+	</script>
+</body>
+
+</html>
