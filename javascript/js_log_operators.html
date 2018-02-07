@@ -75,6 +75,10 @@
 			var x = parseInt(document.getElementById("numA").value);
 			var y = parseInt(document.getElementById("numB").value);
 			output.innerHTML = x + y;
+
+			var status = (a > b) ? "A bigger than B" : "B bigger than A";
+			// ternary operator
+			output.innerHTML = status;
 		}
 
 	</script>
