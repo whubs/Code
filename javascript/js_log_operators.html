@@ -27,6 +27,16 @@
 	<div> Output :
 		<div id="output">Nothing</div>
 	</div>
+	<div>
+		<ul id="myList">
+			<li>One</li>
+			<li>Two</li>
+			<li>Three</li>
+			<li>Four</li>
+			<li>Five</li>
+			<li>Six</li>
+		</ul>
+	</div>
 
 	<script>
 	//parseInt() turns string into an integer
@@ -34,15 +44,31 @@
 		var btn1Click = document.getElementById("btn1");
 		var btn2Click = document.getElementById("btn2")
 		var output = document.getElementById("output");
+		var myList = document.getElementById("myList");
+		var myItems = document.getElementsByTagName("li");
+		console.log(myItems);
 
 		btn1Click.onclick = getResult;
 		btn2Click.onclick = myFun;
 
 		function myFun() {
-			var x = parseInt(document.getElementById("numA").value);
-			var y = parseInt(document.getElementById("numB").value);
-			a++;
-			b--;
+			var x = document.getElementById("numA");
+			var y = document.getElementById("numB");
+			var w = parseInt(x.value);
+			var z = parseInt(y.value);
+			w++;
+			z--;
+			x.value = w;
+			y.value = z;
+
+			for (var i = 0; i < myItems.length; i++) {
+				console.log(myItems[i]);
+				if (i % 2) {
+					myItems[i].style.backgroundColor = "red";
+				}
+			}
+
+
 		}
 
 		function getResult(){
