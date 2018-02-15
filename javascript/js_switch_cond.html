@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScrupt Learning by Discoveryvip</title>
+	<style>
+		.btn{
+			padding: 5px;
+			border: 1px solid black;
+			display: inline-block;
+			margin: 5px;
+		}
+
+		.oput{
+			padding: 10px;
+			margin: 10px;
+			font-size: 18px;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		A
+		<input type="number" name="numA" id="numA" value="6">
+		<br>
+		<input type="number" name="numB" id="numB" value="33">
+		<div>
+			<div id="btn1" class="btn">Button 1</div>
+			<br>
+			<div id="btn2" class="btn">Button 2</div>
+		</div>
+		<div>
+			Output:
+			<div id="output" class="oput">Nothing</div>
+			<div id="output2" class="oput">Nothing</div>
+		</div>
+	</div>
+	<script>
+		var btn1Click = document.getElementById("btn1");
+		var btn2Click = document.getElementById("btn2");
+		var output = document.getElementById("output");
+		var output2 = document.getElementById("output2");
+
+		btn1Click.onclick = myFun;
+		var myContainer = "";
+
+		function myFun(){
+			var a = document.getElementById("numA").value;
+			switch (a){
+				case "0":
+					myContainer = "ZERO";
+			}
+
+			output.innerText = myContainer;
+	</script>
+</body>
+</html>
