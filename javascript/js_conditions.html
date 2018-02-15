@@ -46,13 +46,22 @@
 
 		function myFun(){
 			var a = parseInt(document.getElementById("numA").value);
-			var b = document.getElementById("numB").value;
+			var b = parseInt(document.getElementById("numB").value);
 			output.innerHTML = Math.floor(Math.random() * 1000);
+			/*
+			used to compare types: strings, integers and so on
 			if(a === b){
 				output.innerHTML = "a is equal to b";
 			}
+			*/
+			if(a < b){
+				output.innerHTML = "a less than b";
+			}
+			else if (a == b){
+				output.innerHTML = "a is equal to b";
+			}
 			else{
-				output.innerHTML = "a is NOT equal to b";
+				output.innerHTML = "a more than b";
 			}
 		}
 
