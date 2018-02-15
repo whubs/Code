@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScrupt Learning by Discoveryvip</title>
+	<style>
+		.btn{
+			padding: 5px;
+			border: 1px solid black;
+			display: inline-block;
+			margin: 5px;
+		}
+
+		.oput{
+			padding: 10px;
+			margin: 10px;
+			font-size: 18px;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		A
+		<input type="number" name="numA" id="numA" value="6">
+		<div>
+			<div id="btn1" class="btn">Button 1</div>
+			<br>
+			<div id="btn2" class="btn">Button 2</div>
+		</div>
+		<div>
+			Output:
+			<div id="output" class="oput">Nothing</div>
+		</div>
+	</div>
+	<script>
+		var btn1Click = document.getElementById("btn1");
+		var btn2Click = document.getElementById("btn2");
+		var output = document.getElementById("output");
+
+		btn1Click.onclick = myFun;
+		var myContainer = "";
+
+		function myFun(){
+			myContainer = "WHILE LOOP <br>";
+			var a = parseInt(document.getElementById("numA").value);
+
+			while (a < 10){
+				myContainer += a + " new Number<br>";
+				a++;
+			}
+			
+			output.innerHTML = myContainer;
+		}
+
+			
+	</script>
+</body>
+</html>
