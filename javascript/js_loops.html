@@ -48,7 +48,30 @@
 				myContainer += a + " new Number<br>";
 				a++;
 			}
-			
+
+			output.innerHTML = myContainer;
+		}
+
+		function myFun2(){
+			myContainer = "DO LOOP <br>";
+			var a = parseInt(document.getElementById("numA").value);
+
+			do{
+				myContainer += a + " new Number<br>";
+				a++;
+			}
+			while(a < 10);
+			output.innerHTML = myContainer;
+		}
+
+		function myFun3(){
+			myContainer = "FOR LOOP <br>";
+			var a = parseInt(document.getElementById("numA").value);
+
+			for ( i = 0; i < 10; i++) {
+				myContainer += i + " new Number <br>";
+			}
+
 			output.innerHTML = myContainer;
 		}
 
