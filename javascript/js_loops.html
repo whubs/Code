@@ -26,6 +26,8 @@
 			<div id="btn1" class="btn">Button 1</div>
 			<br>
 			<div id="btn2" class="btn">Button 2</div>
+			<br>
+			<div id="btn3" class="btn">Button 3</div>
 		</div>
 		<div>
 			Output:
@@ -35,9 +37,12 @@
 	<script>
 		var btn1Click = document.getElementById("btn1");
 		var btn2Click = document.getElementById("btn2");
+		var btn3Click = document.getElementById("btn3");
 		var output = document.getElementById("output");
 
 		btn1Click.onclick = myFun;
+		btn2Click.onclick = myFun2;
+		btn3Click.onclick = myFun3;
 		var myContainer = "";
 
 		function myFun(){
