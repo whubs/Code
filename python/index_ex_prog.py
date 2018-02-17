@@ -19,8 +19,9 @@ months = [
 
 f3 = ['st', 'nd', 'rd'];
 th = ['th'];
+f1 = ['st'];
 
-endings = f3 + 17 * th + f3 + 7 * th + f3[0];
+endings = f3 + 17 * th + f3 + 7 * th + f1;
 
 year = raw_input('Year: ');
 month = raw_input('Month (1-12): ');
