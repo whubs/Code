@@ -34,4 +34,4 @@ day_num = int(day);
 month_name = months[month_num - 1];
 day_end = day + endings[day_num - 1];
 
-print month_name + ' ' + day_end + ', ' year;
+print month_name + ' ' + day_end + ', ' + year;
