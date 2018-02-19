@@ -1,6 +1,7 @@
 #! /usr/bin/python
 
 # Prints a sentence in a centered "box" of correct width
+# Adjust the integer in (box_width-[integer]) if necessary
 
 sentence = raw_input("Sentence: ");
 
