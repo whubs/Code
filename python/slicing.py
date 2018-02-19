@@ -1,9 +1,6 @@
 #! /usr/bin/python
 
-seq1 = [1, 2, 3];
-seq2 = [4, 5, 6];
-strng1 = 'Hello, ';
-strng2 = 'world!';
+sequence = [None] * 10;
 tag = '<a href = "http://www.python.org">Python web sites</a>';
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 print "\n";
@@ -53,3 +50,5 @@ print "\"Hello, \" + \"world!\" = \"Hello, world!\"";
 # Multiplication
 print 'python' * 5;
 print [42] * 10;
+# None, Empty Lists and Initialization
+print sequence;
