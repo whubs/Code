@@ -22,3 +22,9 @@ print '\n';
 n2 = list('Perl');
 n2[1:] = list('ython');
 print n2;
+print'\n';
+
+numbers = [1, 5];
+print numbers[1:1];
+numbers[1:1] = [2, 3, 4];
+print numbers;
