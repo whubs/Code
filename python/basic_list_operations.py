@@ -10,3 +10,15 @@ print '\n';
 names = ['Alice', 'Beth', 'Cecil', 'Dee-Dee', 'Earl'];
 del names[2];
 print names;
+print '\n';
+
+# Assigning to Slices
+n1 = list('Perl');
+print n1;
+n1[2:] = list('ar');
+print n1;
+print '\n';
+
+n2 = list('Perl');
+n2[1:] = list('ython');
+print n2;
