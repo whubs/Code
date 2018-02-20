@@ -128,6 +128,22 @@ print '\n';
 
 # Advanced Sorting
 
+# Sorting according to comparison (key = cmp)
+
 print cmp(42, 32); # if x > y return a positive number
 print cmp(99, 100); # if x < y return a negative number
 print cmp(2, 2); # if x == y return 0
+numbers.sort(cmp);
+print numbers;
+
+# Sorting according to length (key = len)
+
+z = ['aardvark', 'abalone', 'acme', 'add', 'aerate'];
+z.sort(key=len);
+print z;
+
+# Sorting with reverse argument
+
+r = [4, 6, 2, 1, 7, 9];
+r.sort(reverse = True);
+print r;
