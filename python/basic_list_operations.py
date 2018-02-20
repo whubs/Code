@@ -30,3 +30,4 @@ numbers[1:1] = [2, 3, 4];
 print numbers;
 numbers[1:4] = [];
 print numbers;
+print '\n';
