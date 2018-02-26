@@ -7,6 +7,7 @@
 # string.punctuation: A string containing al ponctuation characters
 # string.uppercase: A string containing all uppercase letters
 
+# .find('');
 print 'With a moo-moo here, and a moo-moo there'.find('moo');
 title = "Monty Python's Flying Circus";
 print title.find('Monty');
@@ -21,3 +22,11 @@ print subject.find('$$$', 1); # Only supplying the start
 print subject.find('!!!');
 print subject.find('!!!', 1, 16);
 print '\n';
+
+# .join
+seq = ['1', '2', '3', '4', '5', '6']; # Doesn't work if [1, 2, ...] because it's a list of numbers
+sep = '+';
+print sep.join(seq); # Joining a list of strings
+dirs = '','usr','bin','env';
+print '/'.join(dirs);
+print 'C:' + '\\'.join(dirs);
