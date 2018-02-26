@@ -30,3 +30,12 @@ print sep.join(seq); # Joining a list of strings
 dirs = '','usr','bin','env';
 print '/'.join(dirs);
 print 'C:' + '\\'.join(dirs);
+print '\n';
+
+# .lower
+print 'Trondheim Hammer Dance'.lower();
+# >>>if 'Gumby' in ['gumby', 'smith', 'jones']: print 'Found it!'
+# >>>
+name = 'Gumby';
+names =  ['gumby', 'smith', 'jones'];
+if name.lower() in names: print 'Found it!';
