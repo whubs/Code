@@ -51,3 +51,17 @@ print '\n';
 # .replace()
 print 'This is a test'.replace('is', 'eez');
 print '\n';
+
+# .split()
+print '1+2+3+4+5'.split('+');
+print '/usr/bin/env'.split('/');
+print 'Using the default'.split();
+print '\n';
+
+# .strip() works a bit like .lower()
+names =  ['gumby', 'smith', 'jones'];
+name = 'gumby ';
+# >>>if name in names: print 'Found it!'
+# >>>
+if name.strip() in names: print 'Found it!';
+print '**** SPAM * for * everyone!!! ***'.strip(' *!');
