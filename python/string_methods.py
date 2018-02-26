@@ -39,9 +39,15 @@ print 'Trondheim Hammer Dance'.lower();
 name = 'Gumby';
 names =  ['gumby', 'smith', 'jones'];
 if name.lower() in names: print 'Found it!';
+print '\n';
 
 # .title()
 print "that's all, folks!".title();
 # OR
 import
-string.capwords("that's all, folks!");
+print string.capwords("that's all, folks!");
+print '\n';
+
+# .replace()
+print 'This is a test'.replace('is', 'eez');
+print '\n';
