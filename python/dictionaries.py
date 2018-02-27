@@ -15,6 +15,7 @@ items = [('name', 'Gumby'), ('age', 42)];
 d = dict(items);
 print d;
 print d['name'];
+print '\n';
 # OR
 # d = dict(name = 'Gumby', age = 42);
 # print d;
@@ -24,3 +25,4 @@ print d['name'];
 # d[k] = v;
 # del d[k];
 # k in d;
+print "Cecil's phone number is %(Cecil)." % phonebook;
