@@ -9,17 +9,17 @@
 people = {
 
 	'Alice': {
-		'phone': '2341'
+		'phone': '2341',
 		'addr': 'Foo drive 23'
 	},
 
 	'Beth': {
-		'phone': '9102'
+		'phone': '9102',
 		'addr': 'Bar street 42'
 	},
 
 	'Cecil': {
-		'phone': '3158'
+		'phone': '3158',
 		'addr': 'Baz avenue 90'
 	}
 }
