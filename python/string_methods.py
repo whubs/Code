@@ -74,3 +74,8 @@ print len(table);
 print table[:];
 print table[97:123];
 print maketrans('', '')[97:123];
+print '\n';
+
+print 'this is an incredible test'.translate(table);
+# the next example contains a second parameter, it represents the element that should be deleted
+print 'this is an incredible test'.translate(table, ' ');
