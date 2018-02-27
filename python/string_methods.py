@@ -44,7 +44,7 @@ print '\n';
 # .title()
 print "that's all, folks!".title();
 # OR
-import
+import string
 print string.capwords("that's all, folks!");
 print '\n';
 
@@ -65,3 +65,12 @@ name = 'gumby ';
 # >>>
 if name.strip() in names: print 'Found it!';
 print '**** SPAM * for * everyone!!! ***'.strip(' *!');
+print '\n';
+
+# .translate() works a bit like .replace
+from string import maketrans;
+table = maketrans('cs','kz');
+print len(table);
+print table[:];
+print table[97:123];
+print maketrans('', '')[97:123];
