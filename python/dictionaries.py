@@ -26,3 +26,13 @@ print '\n';
 # del d[k];
 # k in d;
 print "Cecil's phone number is %(Cecil)s." % phonebook;
+print '\n';
+template = '''<html>
+<head><title>%(title)s</title></head>
+<body>
+<h1>%(title)s</h1>
+<p>%(text)s</p>
+</body>'''
+
+data = {'title': 'My Home Page', 'text': 'Welcome to my home page'};
+print template % data;
