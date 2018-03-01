@@ -57,3 +57,12 @@ d['names'].append('Clive');
 print d;
 print c;
 print dc;
+
+# .fromkeys() method
+print {}.fromkeys(['name', 'age']);
+
+# But it's better
+print dict.fromkeys(['name', 'age']);
+
+# Or
+print dict.fromkeys(['name', 'age'], '(unknown)');
