@@ -66,3 +66,15 @@ print dict.fromkeys(['name', 'age']);
 
 # Or
 print dict.fromkeys(['name', 'age'], '(unknown)');
+
+# .get method
+d = {};
+print d.get('name');
+
+# Or
+# To use another default:
+# print d.get('name', 'N/A');
+
+# If a key is there, get works like ordinary dictionary lookup:
+d['name'] = 'Eric';
+print d.get('name');
