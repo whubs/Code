@@ -1,6 +1,9 @@
 # /usr/bin/python
 
 # Dictionary Methods
+
+# .clear() method
+
 d = {};
 d['name'] = 'Gumby';
 d['age'] = 42;
@@ -30,3 +33,5 @@ x.clear()
 print y;
 # Returns {}
 print '\n';
+
+# .copy() method
