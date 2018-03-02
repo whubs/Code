@@ -57,6 +57,7 @@ d['names'].append('Clive');
 print d;
 print c;
 print dc;
+print '\n';
 
 # .fromkeys() method
 print {}.fromkeys(['name', 'age']);
@@ -66,7 +67,7 @@ print dict.fromkeys(['name', 'age']);
 
 # Or
 print dict.fromkeys(['name', 'age'], '(unknown)');
-
+print '\n';
 # .get method
 d = {};
 print d.get('name');
@@ -78,3 +79,10 @@ print d.get('name');
 # If a key is there, get works like ordinary dictionary lookup:
 d['name'] = 'Eric';
 print d.get('name');
+print '\n';
+
+# .has_keys()
+d = {};
+print d.has_keys('name');
+d['name'] = 'Eric';
+print d.has_keys('name');
