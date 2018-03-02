@@ -86,3 +86,64 @@ d = {};
 print d.has_keys('name');
 d['name'] = 'Eric';
 print d.has_keys('name');
+print '\n';
+
+# .items and .iteritems
+# .items returns a list in which item is of the form (key,value)
+d = {'title': 'Python Web Site', 'url': 'http://www.python.org', 'spam': 0};
+print d.items();
+print '\n';
+# .iteritems returns an interator
+it = d.iteritems();
+print it;
+print list(it); # Converts iterator into a list
+print '\n';
+
+# .keys and iterkeys works the same as above, except with keys instead of items
+
+# .pop
+d = {'x':1 , 'y':2};
+print d.pop('x');
+print d;
+print '\n';
+
+# .popitem
+d = {'title': 'Python Web Site', 'url': 'http://www.python.org', 'spam': 0};
+print d.popitem();
+print d;
+print '\n';
+
+# .setdefault
+d = {};
+d.setdefault('name', 'N/A');
+# OR
+# d = {};
+# print d.setdefault('name');
+# None
+# print d;
+# {'name': None}
+print d;
+d['name'] = 'Gumby';
+print d.setdefault('name', 'N/A');
+print d;
+print '\n';
+
+# .update()
+d = {
+	'title': 'Python Web Stite',
+	'url': 'http://www.python.org',
+	'changed': 'Mar 14 22:09:15 MET 2008'
+};
+
+x = {'title': 'Python Language Website'};
+d.update(x);
+print d;
+print '\n';
+
+# .values and .itervaules
+d = {};
+d[1] = 1;
+d[2] = 2;
+d[3] = 3;
+d[4] = 1;
+print d.values();
