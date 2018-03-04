@@ -1,11 +1,14 @@
 <div id="output" class="oput">Nothing</div>
 
 <script>
+	var myContainer = "";
 	var jsonData = '{"_id":"57354d34a06fc02a734c1432","index":6,"age":28,"eyeColor":"blue","name":{"first":"Rosario","last":"Good"}}';
 	console.log(jsonData);
 	//JSON.parse() turns string into an object
 	var obj = JSON.parse(jsonData);
 	console.log(obj);
-	obj.name.first = "Michael";
-	document.getElementById("output").innerHTML = obj.name.first + " " + obj.name.last;
+	for (var i = 0; i < obj.length; i++) {
+		myContainer += obj[i].name.first + " " + obj[i].name.last + "<br>";
+	}
+	document.getElementById("output").innerHTML = myContainer;
 </script>
